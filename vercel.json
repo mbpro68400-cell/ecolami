@@ -1,0 +1,12 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/teacher-reports",
+      "schedule": "0 7 * * 1"
+    }
+  ],
+  "functions": {
+    "app/api/chat/route.ts": { "maxDuration": 60 },
+    "app/api/scan/route.ts": { "maxDuration": 30 }
+  }
+}
